@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App API Docs</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        .endpoint {
+            margin-bottom: 2rem;
+        }
+
+        .method {
+            font-weight: bold;
+            color: #3498db;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🍽️ Recipe App API</h1>
+    <p>Base URL: <code>https://fsa-recipe.up.railway.app</code></p>
+
+    <h2>🧑‍💻 Auth Routes</h2>
+
+    <div class="endpoint">
+        <p><span class="method">POST</span> <code>/api/auth/register</code></p>
+        <p>Create a new user with a username and password. Password must be longer than 6 characters.</p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/auth/register", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    username: "johndoe",
+    password: "securepassword"
+  })
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{
+  "token": "jwt_token_here"
+  "username" : "username here"
+}
+    </pre>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">POST</span> <code>/api/auth/login</code></p>
+        <p>Log in with a username and password to receive a JWT token user on future authenticated API calls</p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/auth/login", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    username: "janedoe",
+    password: "securepassword"
+  })
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{
+  "token": "jwt_token_here"
+  "username" : "username here"
+}
+    </pre>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/api/auth/me</code></p>
+        <p>Returns info about the currently logged-in user.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
+  headers: {
+    Authorization: "Bearer your_token_here"
+  }
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{
+  "id": 1,
+  "username": "janedoe"
+}
+    </pre>
+    </div>
+
+
+    <h2>📖 Recipe Routes</h2>
+    
+    <div class="endpoint">
+      <p><span class="method">GET</span> <code>/api/recipes</code></p>
+      <p>Returns all available recipes from the preloaded list.</p>
+      <pre>
+     fetch("https://fsa-recipe.up.railway.app/api/recipes")
+        </pre>
+      <p><strong>Returns:</strong></p>
+      <pre>
+    [
+      {
+        "idMeal": "52772",
+        "strMeal": "Teriyaki Chicken Casserole",
+        "strCategory": "Chicken",
+        "strArea": "Japanese",
+        "strInstructions": "...",
+        "strMealThumb": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+        "strTags": "Meat,Casserole",
+        "strYoutube": "https://www.youtube.com/watch?v=4aZr5hZXP_s",
+        "ingredients": [
+          "3/4 cup soy sauce",
+          "1/2 cup water",
+          "1/4 cup brown sugar",
+          ...
+        ]
+      },
+      ...
+    ]
+        </pre>
+    </div>
+    
+    <div class="endpoint">
+      <p><span class="method">GET</span> <code>/api/recipes/:id</code></p>
+      <p>Returns a single recipe by its <code>idMeal</code>.</p>
+      <pre>
+        fetch("https://fsa-recipe.up.railway.app/api/recipes/52772")
+
+        </pre>
+      <p><strong>Returns:</strong></p>
+      <pre>
+    {
+      "idMeal": "52772",
+      "strMeal": "Teriyaki Chicken Casserole",
+      "strCategory": "Chicken",
+      "strArea": "Japanese",
+      "strInstructions": "...",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg",
+      "strTags": "Meat,Casserole",
+      "strYoutube": "https://www.youtube.com/watch?v=4aZr5hZXP_s",
+      "ingredients": [
+        "3/4 cup soy sauce",
+        "1/2 cup water",
+        "1/4 cup brown sugar",
+        ...
+      ]
+    }
+        </pre>
+    </div>
+    
+    <div class="endpoint">
+      <p><span class="method">GET</span> <code>/api/recipes/random</code></p>
+      <p>Returns a single randomly-selected recipe from the list.</p>
+      <pre>
+       
+           fetch("https://fsa-recipe.up.railway.app/api/recipes/random")
+        
+        </pre>
+      <p><strong>Returns:</strong></p>
+      <pre>
+    {
+      "idMeal": "52804",
+      "strMeal": "Poutine",
+      "strCategory": "Miscellaneous",
+      "strArea": "Canadian",
+      "strInstructions": "...",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
+      "strTags": "Unhealthy,Junk,Filling",
+      "strYoutube": "https://www.youtube.com/watch?v=UVAMAoA2_WU",
+      "ingredients": [
+        "5 potatoes",
+        "Gravy",
+        "Cheese Curds"
+      ]
+    }
+        </pre>
+    </div>
+
+    <h2>🍴 Favorites Routes</h2>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/api/favorites</code></p>
+        <p>Get all of the current user's favorite meals.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/favorites", {
+  headers: {
+    Authorization: "Bearer your_token_here"
+  }
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{ data:[
+  {
+    "id": 1,
+    "mealId": "12345",
+    "name": "Burek",
+    "imageUrl": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
+    "strArea": "Croatian",
+    "userId": 1
+  },
+]
+}
+    </pre>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">POST</span> <code>/api/favorites</code></p>
+        <p>Add a new favorite meal.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/favorites", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer your_token_here"
+  },
+  body: JSON.stringify({
+    mealId: "53060",
+    name: "Burek",
+    imageUrl: "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
+    strArea: "Croatian"
+  })
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+          {
+            message: "Favorite successfully added!",
+            data: {
+            "id": 1,
+            "mealId": "53060",
+            "name": "Burek",
+            "imageUrl": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
+            "strArea": "Croatian",
+            "userId": 1
+            }
+          }
+
+    </pre>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">GET</span> <code>/api/favorites/:id</code></p>
+        <p>Get a single favorite by ID.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
+  headers: {
+    Authorization: "Bearer your_token_here"
+  }
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{
+  "id": 1,
+  "mealId": "53060",
+  "name": "Burek",
+  "imageUrl": "https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg",
+  "strArea": "Croatian",
+  "userId": 1
+}
+    </pre>
+    </div>
+
+    <div class="endpoint">
+        <p><span class="method">DELETE</span> <code>/api/favorites/:id</code></p>
+        <p>Delete a favorite by ID.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
+  method: "DELETE",
+  headers: {
+    Authorization: "Bearer your_token_here"
+  }
+});
+    </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+{ "message": "Favorite removed.", id: deleted_id }
+    </pre>
+    </div>
+
+</body>
+
+</html>

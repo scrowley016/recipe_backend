@@ -1,0 +1,1459 @@
+[
+    {
+    "idMeal": "10001",
+    "strMeal": "Spicy Arrabiata Penne",
+    "strCategory": "Vegetarian",
+    "strArea": "Italian",
+    "strInstructions": "Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes. In a large skillet over medium-high heat, heat the olive oil until it shimmers. Add garlic and cook until fragrant. Stir in tomatoes, chili flakes, and seasoning. Simmer for 5 minutes. Remove from heat, add basil. Toss in pasta and top with cheese.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+    "strTags": "Pasta,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=1IszT_guI08",
+    "ingredients": [
+      "1 pound penne rigate",
+      "1/4 cup olive oil",
+      "3 cloves garlic",
+      "1 tin chopped tomatoes",
+      "1/2 tsp red chilli flakes",
+      "1/2 tsp italian seasoning",
+      "6 leaves basil",
+      "sprinkling Parmigiano-Reggiano"
+    ]
+  },
+  {
+    "idMeal": "10002",
+    "strMeal": "Chicken Tikka Masala",
+    "strCategory": "Chicken",
+    "strArea": "Indian",
+    "strInstructions": "Marinate chicken in yogurt and spices. Grill or broil until slightly charred. Cook onion, garlic, and ginger in butter. Add tomato puree, cream, and spices. Simmer and add chicken. Serve with rice or naan.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
+    "strTags": "Curry,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=U1R9ytvAVr8",
+    "ingredients": [
+      "500g chicken breast",
+      "1 cup plain yogurt",
+      "2 tsp garam masala",
+      "1 tsp ground cumin",
+      "1 onion",
+      "3 cloves garlic",
+      "1 inch ginger",
+      "1 can tomato puree",
+      "1/2 cup cream",
+      "1 tbsp butter"
+    ]
+  },
+  {
+    "idMeal": "10003",
+    "strMeal": "Beef Stroganoff",
+    "strCategory": "Beef",
+    "strArea": "Russian",
+    "strInstructions": "Sear beef strips and set aside. Cook onions and mushrooms in butter. Add beef stock, sour cream, and mustard. Return beef to the pan and simmer until thick. Serve over egg noodles.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/svprys1511176755.jpg",
+    "strTags": "Comfort Food",
+    "strYoutube": "https://www.youtube.com/watch?v=dEj_Gy7HYSA",
+    "ingredients": [
+      "500g beef sirloin",
+      "1 onion",
+      "2 cups mushrooms",
+      "1 cup beef stock",
+      "1/2 cup sour cream",
+      "1 tbsp Dijon mustard",
+      "2 tbsp butter",
+      "250g egg noodles"
+    ]
+  },
+  {
+    "idMeal": "10004",
+    "strMeal": "Vegetable Stir Fry",
+    "strCategory": "Vegan",
+    "strArea": "Chinese",
+    "strInstructions": "Heat oil in a wok. Stir fry garlic, onion, and vegetables. Add soy sauce and sesame oil. Serve hot with rice or noodles.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
+    "strTags": "Quick,Healthy",
+    "strYoutube": "https://www.youtube.com/watch?v=1T4ZzNeOeAk",
+    "ingredients": [
+      "1 bell pepper",
+      "1 carrot",
+      "1 zucchini",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "1 onion",
+      "2 cloves garlic",
+      "1 tbsp vegetable oil"
+    ]
+  },
+  {
+    "idMeal": "10005",
+    "strMeal": "Classic Cheeseburger",
+    "strCategory": "Beef",
+    "strArea": "American",
+    "strInstructions": "Grill beef patties. Toast buns. Assemble with cheese, lettuce, tomato, and sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/urxyxy1511452586.jpg",
+    "strTags": "Burger,Grill",
+    "strYoutube": "https://www.youtube.com/watch?v=5c1-aQVOw1s",
+    "ingredients": [
+      "500g ground beef",
+      "4 burger buns",
+      "4 slices cheddar cheese",
+      "1 tomato",
+      "Lettuce",
+      "Ketchup",
+      "Mustard",
+      "1 tbsp oil"
+    ]
+  },
+  {
+    "idMeal": "10006",
+    "strMeal": "Pad Thai",
+    "strCategory": "Noodles",
+    "strArea": "Thai",
+    "strInstructions": "Soak noodles. Stir fry garlic, tofu, and shrimp. Add noodles and sauce. Stir in egg and peanuts. Serve with lime.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg",
+    "strTags": "Thai,Street Food",
+    "strYoutube": "https://www.youtube.com/watch?v=1yE5PSNiW2A",
+    "ingredients": [
+      "200g rice noodles",
+      "100g shrimp",
+      "100g tofu",
+      "1 egg",
+      "2 tbsp pad thai sauce",
+      "1 clove garlic",
+      "1/4 cup peanuts",
+      "1 lime"
+    ]
+  },
+  {
+    "idMeal": "10007",
+    "strMeal": "Fish Tacos",
+    "strCategory": "Seafood",
+    "strArea": "Mexican",
+    "strInstructions": "Grill seasoned fish. Warm tortillas. Assemble with slaw and sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg",
+    "strTags": "Tacos,Grilled",
+    "strYoutube": "https://www.youtube.com/watch?v=8DEvY93mD20",
+    "ingredients": [
+      "300g white fish",
+      "8 small tortillas",
+      "1/2 cup cabbage slaw",
+      "2 tbsp sour cream",
+      "1 tbsp lime juice",
+      "1 tsp paprika",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10008",
+    "strMeal": "Shakshuka",
+    "strCategory": "Breakfast",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Sauté onion, pepper, and garlic. Add tomatoes and spices. Simmer, then crack eggs on top. Cover and cook until eggs are set.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg",
+    "strTags": "Brunch,Vegetarian",
+    "strYoutube": "https://www.youtube.com/watch?v=VGZNyHFzJBM",
+    "ingredients": [
+      "1 onion",
+      "1 bell pepper",
+      "2 cloves garlic",
+      "1 can crushed tomatoes",
+      "4 eggs",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "Salt & pepper"
+    ]
+  },
+  {
+    "idMeal": "10009",
+    "strMeal": "Stuffed Peppers",
+    "strCategory": "Main",
+    "strArea": "Greek",
+    "strInstructions": "Mix cooked rice, ground beef, and herbs. Stuff into hollowed peppers. Bake until tender.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wxuvuv1511299147.jpg",
+    "strTags": "Oven,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=WjaFOC1gAAo",
+    "ingredients": [
+      "4 bell peppers",
+      "300g ground beef",
+      "1 cup cooked rice",
+      "1 tsp oregano",
+      "1 tsp cinnamon",
+      "1 onion",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10010",
+    "strMeal": "Lentil Soup",
+    "strCategory": "Soup",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Sauté onion, garlic, and carrots. Add lentils and broth. Simmer until lentils are soft. Blend if desired. Add lemon juice and serve.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/vpxyqt1511464175.jpg",
+    "strTags": "Healthy,Warm",
+    "strYoutube": "https://www.youtube.com/watch?v=lP_3n4zq6iY",
+    "ingredients": [
+      "1 cup red lentils",
+      "1 onion",
+      "2 cloves garlic",
+      "1 carrot",
+      "4 cups vegetable broth",
+      "1 tsp cumin",
+      "1 tbsp lemon juice",
+      "Salt & pepper"
+    ]
+  }, 
+  {
+    "idMeal": "10011",
+    "strMeal": "Miso Ramen",
+    "strCategory": "Noodles",
+    "strArea": "Japanese",
+    "strInstructions": "Cook ramen noodles. Sauté garlic and ginger, add miso paste, broth, and soy sauce. Simmer. Add noodles, top with egg and green onions.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/yuxxxt1511294477.jpg",
+    "strTags": "Soup,Noodles",
+    "strYoutube": "https://www.youtube.com/watch?v=1aMzpbqSw9o",
+    "ingredients": [
+      "200g ramen noodles",
+      "1 tbsp miso paste",
+      "2 cups chicken broth",
+      "1 tbsp soy sauce",
+      "1 clove garlic",
+      "1 tsp ginger",
+      "1 boiled egg",
+      "2 tbsp green onions"
+    ]
+  },
+  {
+    "idMeal": "10012",
+    "strMeal": "Caprese Salad",
+    "strCategory": "Vegetarian",
+    "strArea": "Italian",
+    "strInstructions": "Slice tomatoes and mozzarella. Arrange on a plate with basil. Drizzle with olive oil and balsamic.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg",
+    "strTags": "Salad,Fresh",
+    "strYoutube": "https://www.youtube.com/watch?v=y6KpWvGH3as",
+    "ingredients": [
+      "2 tomatoes",
+      "1 ball fresh mozzarella",
+      "6 basil leaves",
+      "1 tbsp olive oil",
+      "1 tsp balsamic vinegar",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10013",
+    "strMeal": "Falafel Wrap",
+    "strCategory": "Vegan",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Blend chickpeas with herbs and spices. Form balls, fry until crispy. Serve in pita with veggies and tahini sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/l3n5wr1511816463.jpg",
+    "strTags": "Wrap,Vegan",
+    "strYoutube": "https://www.youtube.com/watch?v=VVnZd8A84z4",
+    "ingredients": [
+      "1 can chickpeas",
+      "1/2 onion",
+      "2 cloves garlic",
+      "1 tsp cumin",
+      "2 tbsp parsley",
+      "4 pita breads",
+      "1/2 cup lettuce",
+      "2 tbsp tahini"
+    ]
+  },
+  {
+    "idMeal": "10014",
+    "strMeal": "Egg Fried Rice",
+    "strCategory": "Rice",
+    "strArea": "Chinese",
+    "strInstructions": "Scramble eggs, set aside. Stir fry garlic, vegetables, and rice. Add soy sauce and return eggs. Mix and serve.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/kogoyi1602349752.jpg",
+    "strTags": "Rice,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=bH5ozEo1AoU",
+    "ingredients": [
+      "2 cups cooked rice",
+      "2 eggs",
+      "1/2 cup peas",
+      "1/2 cup carrots",
+      "1 clove garlic",
+      "2 tbsp soy sauce",
+      "1 tbsp oil",
+      "Green onions"
+    ]
+  },
+  {
+    "idMeal": "10015",
+    "strMeal": "Grilled Cheese Sandwich",
+    "strCategory": "Snack",
+    "strArea": "American",
+    "strInstructions": "Butter bread slices. Place cheese in between. Grill until golden brown on both sides.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg",
+    "strTags": "Quick,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=Hek3dQ1raC4",
+    "ingredients": [
+      "2 slices bread",
+      "2 slices cheddar cheese",
+      "1 tbsp butter"
+    ]
+  },
+  {
+    "idMeal": "10016",
+    "strMeal": "Coconut Curry",
+    "strCategory": "Curry",
+    "strArea": "Thai",
+    "strInstructions": "Cook onion, garlic, and ginger. Add curry paste and coconut milk. Add vegetables and simmer. Serve with rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/1529446137.jpg",
+    "strTags": "Spicy,Creamy",
+    "strYoutube": "https://www.youtube.com/watch?v=f6Gz60b9c-Y",
+    "ingredients": [
+      "1 onion",
+      "2 cloves garlic",
+      "1 inch ginger",
+      "2 tbsp curry paste",
+      "1 can coconut milk",
+      "2 cups mixed vegetables",
+      "Salt",
+      "Rice"
+    ]
+  },
+  {
+    "idMeal": "10017",
+    "strMeal": "Margherita Pizza",
+    "strCategory": "Pizza",
+    "strArea": "Italian",
+    "strInstructions": "Roll out dough. Add tomato sauce and mozzarella. Bake until crust is golden. Top with basil.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg",
+    "strTags": "Pizza,Oven",
+    "strYoutube": "https://www.youtube.com/watch?v=3K2yqP4S1U4",
+    "ingredients": [
+      "1 pizza dough",
+      "1/2 cup tomato sauce",
+      "1 cup mozzarella",
+      "6 basil leaves",
+      "Olive oil"
+    ]
+  },
+  {
+    "idMeal": "10018",
+    "strMeal": "Huevos Rancheros",
+    "strCategory": "Breakfast",
+    "strArea": "Mexican",
+    "strInstructions": "Fry tortillas and eggs. Top with salsa and beans. Garnish with cilantro and cheese.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/yf23ss1560453420.jpg",
+    "strTags": "Spicy,Brunch",
+    "strYoutube": "https://www.youtube.com/watch?v=jKdTnWZzGzc",
+    "ingredients": [
+      "2 eggs",
+      "2 corn tortillas",
+      "1/2 cup salsa",
+      "1/4 cup black beans",
+      "2 tbsp queso fresco",
+      "Cilantro",
+      "Oil"
+    ]
+  },
+  {
+    "idMeal": "10019",
+    "strMeal": "Gnocchi with Pesto",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Boil gnocchi. Toss with pesto and serve with grated parmesan.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg",
+    "strTags": "Pasta,Green",
+    "strYoutube": "https://www.youtube.com/watch?v=e2yQJij8hxU",
+    "ingredients": [
+      "500g gnocchi",
+      "1/2 cup pesto",
+      "Parmesan cheese"
+    ]
+  },
+  {
+    "idMeal": "10020",
+    "strMeal": "Sweet and Sour Chicken",
+    "strCategory": "Chicken",
+    "strArea": "Chinese",
+    "strInstructions": "Fry chicken until golden. Stir fry vegetables. Add sauce and toss with chicken. Serve with rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/1529445434.jpg",
+    "strTags": "Sweet,Savory",
+    "strYoutube": "https://www.youtube.com/watch?v=4c4xzN9DqZ0",
+    "ingredients": [
+      "500g chicken",
+      "1/2 bell pepper",
+      "1/2 onion",
+      "1/4 cup ketchup",
+      "2 tbsp vinegar",
+      "1 tbsp sugar",
+      "1 tsp soy sauce",
+      "Rice"
+    ]
+  },
+  {
+    "idMeal": "10021",
+    "strMeal": "Stuffed Bell Peppers",
+    "strCategory": "Beef",
+    "strArea": "American",
+    "strInstructions": "Cut tops off peppers, remove seeds. Stuff with beef, rice, tomato sauce. Bake until peppers are tender.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/1529444830.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=6Z6EfbT2liA",
+    "ingredients": [
+      "4 bell peppers",
+      "1/2 lb ground beef",
+      "1 cup cooked rice",
+      "1/2 cup tomato sauce",
+      "1/4 onion",
+      "1 tsp oregano",
+      "Salt",
+      "Cheddar cheese"
+    ]
+  },
+  {
+    "idMeal": "10022",
+    "strMeal": "Vegetable Stir Fry",
+    "strCategory": "Vegetarian",
+    "strArea": "Chinese",
+    "strInstructions": "Stir fry garlic and mixed veggies. Add soy sauce and sesame oil. Serve over rice or noodles.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wqurxy1511453156.jpg",
+    "strTags": "Quick,Healthy",
+    "strYoutube": "https://www.youtube.com/watch?v=3qibF_qzAwY",
+    "ingredients": [
+      "2 cups mixed vegetables",
+      "1 clove garlic",
+      "2 tbsp soy sauce",
+      "1 tsp sesame oil",
+      "1 tbsp vegetable oil",
+      "Rice or noodles"
+    ]
+  },
+  {
+    "idMeal": "10023",
+    "strMeal": "Tuna Melt",
+    "strCategory": "Seafood",
+    "strArea": "American",
+    "strInstructions": "Mix tuna with mayo. Spread on bread, top with cheese. Toast until golden and melty.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/tuvtuu1511815050.jpg",
+    "strTags": "Quick,Sandwich",
+    "strYoutube": "https://www.youtube.com/watch?v=v4FgJ4hGWXI",
+    "ingredients": [
+      "1 can tuna",
+      "2 tbsp mayonnaise",
+      "2 slices bread",
+      "2 slices cheddar cheese",
+      "Butter"
+    ]
+  },
+  {
+    "idMeal": "10024",
+    "strMeal": "Bibimbap",
+    "strCategory": "Beef",
+    "strArea": "Korean",
+    "strInstructions": "Cook beef and vegetables separately. Arrange over rice, top with egg and gochujang sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg",
+    "strTags": "Rice,Bowl",
+    "strYoutube": "https://www.youtube.com/watch?v=5BVvt3i3Jks",
+    "ingredients": [
+      "1 cup rice",
+      "100g ground beef",
+      "1/2 zucchini",
+      "1/2 carrot",
+      "1 cup spinach",
+      "1 egg",
+      "1 tbsp gochujang",
+      "Sesame oil"
+    ]
+  },
+  {
+    "idMeal": "10025",
+    "strMeal": "French Onion Soup",
+    "strCategory": "Soup",
+    "strArea": "French",
+    "strInstructions": "Caramelize onions. Add broth and herbs. Simmer. Serve with toasted bread and melted cheese on top.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg",
+    "strTags": "Soup,Warm",
+    "strYoutube": "https://www.youtube.com/watch?v=fL5rCwhgEyc",
+    "ingredients": [
+      "3 onions",
+      "2 tbsp butter",
+      "4 cups beef broth",
+      "1 tsp thyme",
+      "Salt",
+      "Pepper",
+      "Baguette slices",
+      "Gruyere cheese"
+    ]
+  },
+  {
+    "idMeal": "10026",
+    "strMeal": "Chicken Caesar Wrap",
+    "strCategory": "Chicken",
+    "strArea": "American",
+    "strInstructions": "Mix chicken, romaine, and dressing. Wrap in a tortilla with parmesan and croutons.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/3f4rrp1511303513.jpg",
+    "strTags": "Wrap,Salad",
+    "strYoutube": "https://www.youtube.com/watch?v=3ZMn4FzXQUQ",
+    "ingredients": [
+      "1 cup cooked chicken",
+      "1 cup romaine lettuce",
+      "2 tbsp Caesar dressing",
+      "1/4 cup croutons",
+      "2 tbsp parmesan",
+      "1 tortilla"
+    ]
+  },
+  {
+    "idMeal": "10027",
+    "strMeal": "Pancit Bihon",
+    "strCategory": "Noodles",
+    "strArea": "Filipino",
+    "strInstructions": "Soak noodles. Stir fry meat and veggies. Add noodles and soy sauce. Mix well and serve.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/1520084413.jpg",
+    "strTags": "Noodles,StirFry",
+    "strYoutube": "https://www.youtube.com/watch?v=UrfL3Ze9Wzo",
+    "ingredients": [
+      "200g rice noodles",
+      "1/2 cup chicken",
+      "1/2 cup shrimp",
+      "1/2 cup carrots",
+      "1/2 cup cabbage",
+      "2 tbsp soy sauce",
+      "Garlic",
+      "Onion"
+    ]
+  },
+  {
+    "idMeal": "10028",
+    "strMeal": "Avocado Toast",
+    "strCategory": "Breakfast",
+    "strArea": "American",
+    "strInstructions": "Toast bread. Mash avocado with salt and pepper. Spread and top with egg or toppings of choice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg",
+    "strTags": "Toast,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=1ZQ_GC1ekew",
+    "ingredients": [
+      "2 slices bread",
+      "1 avocado",
+      "Salt",
+      "Pepper",
+      "1 egg (optional)",
+      "Chili flakes"
+    ]
+  },
+  {
+    "idMeal": "10029",
+    "strMeal": "Chicken Tikka Masala",
+    "strCategory": "Chicken",
+    "strArea": "Indian",
+    "strInstructions": "Marinate chicken, grill. Cook in creamy tomato sauce with spices. Serve with rice or naan.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/urpvvv1511792172.jpg",
+    "strTags": "Spicy,Grilled",
+    "strYoutube": "https://www.youtube.com/watch?v=qKE0GfRthZc",
+    "ingredients": [
+      "500g chicken breast",
+      "1/2 cup yogurt",
+      "2 tbsp garam masala",
+      "1 tsp turmeric",
+      "1 tsp paprika",
+      "1 can tomato puree",
+      "1/2 cup cream",
+      "Salt"
+    ]
+  },
+  {
+    "idMeal": "10030",
+    "strMeal": "Shrimp Tacos",
+    "strCategory": "Seafood",
+    "strArea": "Mexican",
+    "strInstructions": "Sauté shrimp with spices. Fill tortillas with shrimp, slaw, and sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/8x09hy1560460923.jpg",
+    "strTags": "Tacos,Seafood",
+    "strYoutube": "https://www.youtube.com/watch?v=ZG7fKjaqkH8",
+    "ingredients": [
+      "200g shrimp",
+      "1 tsp chili powder",
+      "1/2 tsp cumin",
+      "4 tortillas",
+      "1/2 cup coleslaw",
+      "2 tbsp sour cream",
+      "1 tbsp lime juice",
+      "Cilantro"
+    ]
+  },
+  {
+    "idMeal": "10031",
+    "strMeal": "Eggplant Parmesan",
+    "strCategory": "Vegetarian",
+    "strArea": "Italian",
+    "strInstructions": "Bread and fry eggplant slices. Layer with marinara and cheese. Bake until golden and bubbly.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/qrqypg1576787654.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=8omZo5bLIs4",
+    "ingredients": [
+      "1 eggplant",
+      "1 cup breadcrumbs",
+      "2 eggs",
+      "1 cup marinara sauce",
+      "1 cup mozzarella",
+      "1/4 cup parmesan",
+      "Olive oil",
+      "Salt"
+    ]
+  },
+  {
+    "idMeal": "10032",
+    "strMeal": "Beef and Broccoli",
+    "strCategory": "Beef",
+    "strArea": "Chinese",
+    "strInstructions": "Stir fry beef and broccoli in soy sauce mixture. Serve over rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg",
+    "strTags": "StirFry,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=4i4hh6OPk9o",
+    "ingredients": [
+      "200g flank steak",
+      "2 cups broccoli florets",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 clove garlic",
+      "1 tsp cornstarch",
+      "1/2 cup water",
+      "Vegetable oil"
+    ]
+  },
+  {
+    "idMeal": "10033",
+    "strMeal": "Huevos Rancheros",
+    "strCategory": "Breakfast",
+    "strArea": "Mexican",
+    "strInstructions": "Fry eggs. Serve on tortillas with salsa, beans, and avocado.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
+    "strTags": "Eggs,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=R0SYLhAbK2c",
+    "ingredients": [
+      "2 eggs",
+      "2 corn tortillas",
+      "1/2 cup black beans",
+      "1/2 cup salsa",
+      "1/2 avocado",
+      "1 tbsp cilantro",
+      "Salt",
+      "Oil"
+    ]
+  },
+  {
+    "idMeal": "10034",
+    "strMeal": "Swedish Meatballs",
+    "strCategory": "Beef",
+    "strArea": "Swedish",
+    "strInstructions": "Mix meatball ingredients, shape and cook. Make creamy gravy and serve over noodles.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg",
+    "strTags": "Comfort,Meatballs",
+    "strYoutube": "https://www.youtube.com/watch?v=w5O6-ZaRwC4",
+    "ingredients": [
+      "500g ground beef",
+      "1 egg",
+      "1/4 cup breadcrumbs",
+      "1/4 cup onion",
+      "1/2 tsp allspice",
+      "1/2 cup cream",
+      "2 tbsp flour",
+      "2 cups beef broth"
+    ]
+  },
+  {
+    "idMeal": "10035",
+    "strMeal": "Ratatouille",
+    "strCategory": "Vegetarian",
+    "strArea": "French",
+    "strInstructions": "Layer thinly sliced vegetables over tomato sauce. Bake until tender.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg",
+    "strTags": "Healthy,Baked",
+    "strYoutube": "https://www.youtube.com/watch?v=iCMGPRiDXQg",
+    "ingredients": [
+      "1 zucchini",
+      "1 eggplant",
+      "1 bell pepper",
+      "2 tomatoes",
+      "1/2 onion",
+      "1 cup tomato sauce",
+      "Olive oil",
+      "Thyme"
+    ]
+  },
+  {
+    "idMeal": "10036",
+    "strMeal": "Buffalo Chicken Dip",
+    "strCategory": "Appetizer",
+    "strArea": "American",
+    "strInstructions": "Mix shredded chicken with cream cheese, hot sauce, and ranch. Bake until hot and bubbly.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uwxqwy1483389553.jpg",
+    "strTags": "Dip,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=FOt_VAJaBvs",
+    "ingredients": [
+      "1 cup cooked chicken",
+      "1/2 cup hot sauce",
+      "1/2 cup ranch dressing",
+      "1 cup cream cheese",
+      "1/2 cup cheddar cheese",
+      "Tortilla chips"
+    ]
+  },
+  {
+    "idMeal": "10037",
+    "strMeal": "Spanakopita",
+    "strCategory": "Vegetarian",
+    "strArea": "Greek",
+    "strInstructions": "Mix spinach and feta. Wrap in phyllo pastry. Bake until golden.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg",
+    "strTags": "Pastry,Snack",
+    "strYoutube": "https://www.youtube.com/watch?v=-1XnK3vqgC4",
+    "ingredients": [
+      "1 cup spinach",
+      "1/2 cup feta cheese",
+      "1 egg",
+      "1/4 cup onion",
+      "8 phyllo sheets",
+      "Olive oil",
+      "Dill"
+    ]
+  },
+  {
+    "idMeal": "10038",
+    "strMeal": "Turkey Club Sandwich",
+    "strCategory": "Sandwich",
+    "strArea": "American",
+    "strInstructions": "Layer turkey, bacon, lettuce, tomato on toasted bread with mayo. Cut into quarters.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg",
+    "strTags": "Lunch,Easy",
+    "strYoutube": "https://www.youtube.com/watch?v=ZcboO2vL2pY",
+    "ingredients": [
+      "3 slices bread",
+      "4 slices turkey",
+      "2 slices bacon",
+      "1 leaf lettuce",
+      "2 tomato slices",
+      "1 tbsp mayonnaise"
+    ]
+  },
+  {
+    "idMeal": "10039",
+    "strMeal": "Gnocchi with Pesto",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Boil gnocchi. Toss with pesto and top with grated cheese.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/1ngcb51628673801.jpg",
+    "strTags": "Pasta,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=kpzEv_pGFDE",
+    "ingredients": [
+      "500g gnocchi",
+      "1/2 cup pesto",
+      "1/4 cup parmesan",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10040",
+    "strMeal": "Salmon Teriyaki",
+    "strCategory": "Seafood",
+    "strArea": "Japanese",
+    "strInstructions": "Pan-sear salmon. Glaze with teriyaki sauce. Serve with rice and vegetables.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg",
+    "strTags": "Fish,Glazed",
+    "strYoutube": "https://www.youtube.com/watch?v=ABQzzm7E6sg",
+    "ingredients": [
+      "2 salmon fillets",
+      "2 tbsp soy sauce",
+      "1 tbsp mirin",
+      "1 tbsp sugar",
+      "1 tsp sesame oil",
+      "Rice",
+      "Broccoli"
+    ]
+  },
+  {
+    "idMeal": "10041",
+    "strMeal": "Thai Green Curry",
+    "strCategory": "Chicken",
+    "strArea": "Thai",
+    "strInstructions": "Cook curry paste, add chicken and veggies. Pour in coconut milk and simmer.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/sstssx1487349585.jpg",
+    "strTags": "Spicy,Curry",
+    "strYoutube": "https://www.youtube.com/watch?v=VJXU7EvxQQk",
+    "ingredients": [
+      "2 tbsp green curry paste",
+      "1 can coconut milk",
+      "300g chicken breast",
+      "1 cup green beans",
+      "1/2 bell pepper",
+      "1 tbsp fish sauce",
+      "Basil leaves",
+      "Rice"
+    ]
+  },
+  {
+    "idMeal": "10042",
+    "strMeal": "French Onion Soup",
+    "strCategory": "Soup",
+    "strArea": "French",
+    "strInstructions": "Caramelize onions, add broth. Top with bread and melted cheese.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xvrrux1511783685.jpg",
+    "strTags": "Soup,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=jV6V3y75L1A",
+    "ingredients": [
+      "4 onions",
+      "2 tbsp butter",
+      "4 cups beef broth",
+      "1 tsp thyme",
+      "Baguette slices",
+      "1 cup gruyere cheese",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10043",
+    "strMeal": "Pulled Pork Sandwich",
+    "strCategory": "Pork",
+    "strArea": "American",
+    "strInstructions": "Slow cook pork with BBQ sauce. Shred and serve on buns with slaw.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/4pr7h71576712037.jpg",
+    "strTags": "SlowCooked,Sandwich",
+    "strYoutube": "https://www.youtube.com/watch?v=IVnNqjZW24U",
+    "ingredients": [
+      "1kg pork shoulder",
+      "1 cup BBQ sauce",
+      "1/2 cup apple cider vinegar",
+      "Burger buns",
+      "Coleslaw mix",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10044",
+    "strMeal": "Pad Thai",
+    "strCategory": "Noodles",
+    "strArea": "Thai",
+    "strInstructions": "Soak noodles, stir-fry with shrimp, eggs, and sauce. Garnish with peanuts.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg",
+    "strTags": "StirFry,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=8ELaH9X1Fvw",
+    "ingredients": [
+      "200g rice noodles",
+      "2 eggs",
+      "150g shrimp",
+      "2 tbsp fish sauce",
+      "1 tbsp tamarind paste",
+      "1 tbsp sugar",
+      "1/4 cup peanuts",
+      "Bean sprouts"
+    ]
+  },
+  {
+    "idMeal": "10045",
+    "strMeal": "Shakshuka",
+    "strCategory": "Breakfast",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Simmer tomatoes with spices. Crack in eggs and cook until just set.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/g373701551450225.jpg",
+    "strTags": "Vegetarian,Brunch",
+    "strYoutube": "https://www.youtube.com/watch?v=egtny1vQzTU",
+    "ingredients": [
+      "4 eggs",
+      "1 can diced tomatoes",
+      "1/2 onion",
+      "1 clove garlic",
+      "1 tsp cumin",
+      "1 tsp paprika",
+      "Olive oil",
+      "Parsley"
+    ]
+  },
+  {
+    "idMeal": "10046",
+    "strMeal": "Stuffed Peppers",
+    "strCategory": "Beef",
+    "strArea": "American",
+    "strInstructions": "Stuff bell peppers with meat, rice, and tomato mixture. Bake until tender.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=W5yovRDyVmY",
+    "ingredients": [
+      "4 bell peppers",
+      "300g ground beef",
+      "1 cup cooked rice",
+      "1/2 cup tomato sauce",
+      "1/4 cup onion",
+      "1 tsp garlic powder",
+      "Cheddar cheese",
+      "Salt"
+    ]
+  },
+  {
+    "idMeal": "10047",
+    "strMeal": "Teriyaki Tofu Stir Fry",
+    "strCategory": "Vegetarian",
+    "strArea": "Japanese",
+    "strInstructions": "Stir-fry tofu and vegetables with teriyaki sauce. Serve with rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg",
+    "strTags": "Vegan,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=9Y3GZTnKzZk",
+    "ingredients": [
+      "200g tofu",
+      "1/2 cup teriyaki sauce",
+      "1 cup broccoli",
+      "1/2 bell pepper",
+      "1/4 onion",
+      "1 tbsp sesame oil",
+      "Rice"
+    ]
+  },
+  {
+    "idMeal": "10048",
+    "strMeal": "Bangers and Mash",
+    "strCategory": "Pork",
+    "strArea": "British",
+    "strInstructions": "Cook sausages. Make mashed potatoes and onion gravy. Serve together.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/urystu1511384529.jpg",
+    "strTags": "Sausage,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=mRgXDfHXw4A",
+    "ingredients": [
+      "4 pork sausages",
+      "4 potatoes",
+      "1/2 cup milk",
+      "2 tbsp butter",
+      "1 onion",
+      "1 cup beef broth",
+      "1 tbsp flour",
+      "Salt"
+    ]
+  },
+  {
+    "idMeal": "10049",
+    "strMeal": "Veggie Quesadillas",
+    "strCategory": "Vegetarian",
+    "strArea": "Mexican",
+    "strInstructions": "Fill tortillas with sautéed veggies and cheese. Cook until golden and crispy.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ytttsv1511798734.jpg",
+    "strTags": "Snack,Cheesy",
+    "strYoutube": "https://www.youtube.com/watch?v=KeWm6AsEmfY",
+    "ingredients": [
+      "2 flour tortillas",
+      "1/2 cup shredded cheese",
+      "1/4 onion",
+      "1/4 bell pepper",
+      "1/4 zucchini",
+      "1 tbsp olive oil",
+      "Salsa"
+    ]
+  },
+  {
+    "idMeal": "10050",
+    "strMeal": "Chicken Caesar Wrap",
+    "strCategory": "Chicken",
+    "strArea": "American",
+    "strInstructions": "Wrap grilled chicken, lettuce, parmesan, and Caesar dressing in a tortilla.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
+    "strTags": "Wrap,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=t6vN4T-hX2k",
+    "ingredients": [
+      "1 flour tortilla",
+      "100g grilled chicken",
+      "1 cup romaine lettuce",
+      "2 tbsp Caesar dressing",
+      "2 tbsp parmesan",
+      "Croutons (optional)"
+    ]
+  },
+  {
+    "idMeal": "10051",
+    "strMeal": "Chicken Alfredo",
+    "strCategory": "Chicken",
+    "strArea": "Italian",
+    "strInstructions": "Cook pasta, then make a creamy Alfredo sauce with garlic and parmesan. Toss with chicken.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wvpsxp1487347417.jpg",
+    "strTags": "Pasta,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=9H_sOwTkkt4",
+    "ingredients": [
+      "200g pasta",
+      "2 chicken breasts",
+      "1 cup heavy cream",
+      "1/2 cup parmesan",
+      "2 cloves garlic",
+      "2 tbsp butter",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10052",
+    "strMeal": "Beef Tacos",
+    "strCategory": "Beef",
+    "strArea": "Mexican",
+    "strInstructions": "Cook ground beef with taco seasoning, then serve in taco shells with toppings.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/utxqpt1511190537.jpg",
+    "strTags": "Tacos,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=XY_xw9CmXm0",
+    "ingredients": [
+      "300g ground beef",
+      "1 packet taco seasoning",
+      "Taco shells",
+      "Lettuce",
+      "Tomato",
+      "Cheddar cheese",
+      "Sour cream"
+    ]
+  },
+  {
+    "idMeal": "10053",
+    "strMeal": "Lasagna",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Layer pasta, meat sauce, and cheese. Bake until golden and bubbly.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxz2sf1511813074.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=wPf6VqFm4AM",
+    "ingredients": [
+      "12 lasagna noodles",
+      "500g ground beef",
+      "1 jar marinara sauce",
+      "2 cups ricotta cheese",
+      "2 cups mozzarella cheese",
+      "1/2 cup parmesan cheese",
+      "1 egg",
+      "Italian seasoning"
+    ]
+  },
+  {
+    "idMeal": "10054",
+    "strMeal": "Vegetable Stir Fry",
+    "strCategory": "Vegetarian",
+    "strArea": "Asian",
+    "strInstructions": "Stir fry mixed vegetables with soy sauce and serve over rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/2qz5rt1511813501.jpg",
+    "strTags": "Vegan,Quick",
+    "strYoutube": "https://www.youtube.com/watch?v=hrdoKlgzJxs",
+    "ingredients": [
+      "1 cup broccoli",
+      "1/2 bell pepper",
+      "1/2 onion",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "1/2 cup carrots",
+      "1 cup cooked rice",
+      "Garlic"
+    ]
+  },
+  {
+    "idMeal": "10055",
+    "strMeal": "Chicken Parmesan",
+    "strCategory": "Chicken",
+    "strArea": "Italian",
+    "strInstructions": "Bread and fry chicken, top with marinara sauce and cheese, then bake.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/5ua0sx1487349797.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=Zt0dHliRUVo",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 cup breadcrumbs",
+      "1 cup marinara sauce",
+      "1/2 cup mozzarella cheese",
+      "1/4 cup parmesan",
+      "1 egg",
+      "Olive oil",
+      "Italian seasoning"
+    ]
+  },
+  {
+    "idMeal": "10056",
+    "strMeal": "Lemon Chicken",
+    "strCategory": "Chicken",
+    "strArea": "American",
+    "strInstructions": "Cook chicken breasts in lemon butter sauce and serve with vegetables.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwqu1487349331.jpg",
+    "strTags": "Quick,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=V6oPvux6pE0",
+    "ingredients": [
+      "2 chicken breasts",
+      "1/2 cup lemon juice",
+      "2 tbsp butter",
+      "1 tbsp olive oil",
+      "1 clove garlic",
+      "1 tbsp fresh parsley",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10057",
+    "strMeal": "Eggplant Parmesan",
+    "strCategory": "Vegetarian",
+    "strArea": "Italian",
+    "strInstructions": "Bread and fry eggplant, layer with marinara sauce and cheese, then bake.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ftwqwv1511788137.jpg",
+    "strTags": "Baked,Vegetarian",
+    "strYoutube": "https://www.youtube.com/watch?v=eLeYq7ZT1os",
+    "ingredients": [
+      "2 eggplants",
+      "1 cup breadcrumbs",
+      "1 jar marinara sauce",
+      "2 cups mozzarella cheese",
+      "1/4 cup parmesan cheese",
+      "1 egg",
+      "Italian seasoning"
+    ]
+  },
+  {
+    "idMeal": "10058",
+    "strMeal": "Fish Tacos",
+    "strCategory": "Seafood",
+    "strArea": "Mexican",
+    "strInstructions": "Grill fish and serve in taco shells with cabbage slaw and sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/utxqpt1511190537.jpg",
+    "strTags": "Tacos,Seafood",
+    "strYoutube": "https://www.youtube.com/watch?v=7Kl9R8w95e8",
+    "ingredients": [
+      "400g white fish fillets",
+      "Taco shells",
+      "1 cup shredded cabbage",
+      "1/2 cup sour cream",
+      "1 tbsp lime juice",
+      "1 tbsp cilantro",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10059",
+    "strMeal": "Bulgur Wheat Salad",
+    "strCategory": "Salad",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Cook bulgur wheat, then mix with chopped vegetables and lemon dressing.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/mvrrys1511814136.jpg",
+    "strTags": "Vegan,Healthy",
+    "strYoutube": "https://www.youtube.com/watch?v=FlrdTEmgpfw",
+    "ingredients": [
+      "1 cup bulgur wheat",
+      "1 tomato",
+      "1 cucumber",
+      "1/2 red onion",
+      "1 tbsp olive oil",
+      "1 tbsp lemon juice",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10060",
+    "strMeal": "Chicken Fajitas",
+    "strCategory": "Chicken",
+    "strArea": "Mexican",
+    "strInstructions": "Sauté chicken with peppers and onions. Serve with tortillas and salsa.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/qy7t0b1511785061.jpg",
+    "strTags": "Quick,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=mrPHcmch4aM",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 red bell pepper",
+      "1 green bell pepper",
+      "1/2 onion",
+      "1 tsp fajita seasoning",
+      "Flour tortillas",
+      "Salsa"
+    ]
+  },
+  {
+    "idMeal": "10161",
+    "strMeal": "Vegetable Curry",
+    "strCategory": "Vegetarian",
+    "strArea": "Indian",
+    "strInstructions": "Cook mixed vegetables with curry spices and coconut milk. Serve with rice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/2a8vqp1511786491.jpg",
+    "strTags": "Curry,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=3qibF_qzAwY",
+    "ingredients": [
+      "2 cups mixed vegetables",
+      "1 can coconut milk",
+      "2 tbsp curry powder",
+      "1 onion",
+      "1 clove garlic",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10162",
+    "strMeal": "Pasta Primavera",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Cook pasta, then toss with sautéed vegetables and olive oil.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/2a8vqp1511786491.jpg",
+    "strTags": "Vegetarian,Pasta",
+    "strYoutube": "https://www.youtube.com/watch?v=3qibF_qzAwY",
+    "ingredients": [
+      "200g pasta",
+      "1 zucchini",
+      "1 bell pepper",
+      "1 carrot",
+      "2 tbsp olive oil",
+      "Salt",
+      "Pepper"
+    ]
+  },
+  {
+    "idMeal": "10061",
+    "strMeal": "Spaghetti Carbonara",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Cook pasta, fry pancetta, then toss with eggs, parmesan, and black pepper.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwqu1487349331.jpg",
+    "strTags": "Pasta,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=d2MSdFF3R6I",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 eggs",
+      "1/2 cup parmesan cheese",
+      "Black pepper"
+    ]
+  },
+  {
+    "idMeal": "10062",
+    "strMeal": "Chicken Tikka Masala",
+    "strCategory": "Chicken",
+    "strArea": "Indian",
+    "strInstructions": "Marinate chicken in yogurt and spices, then cook in a spiced tomato sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uvxuxu1487347966.jpg",
+    "strTags": "Spicy,Indian",
+    "strYoutube": "https://www.youtube.com/watch?v=p4J_yW9Vxg8",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 cup yogurt",
+      "2 tbsp curry powder",
+      "1 can tomato sauce",
+      "1 onion",
+      "1 tbsp ginger",
+      "1 tbsp garlic",
+      "1/2 cup cream"
+    ]
+  },
+  {
+    "idMeal": "10063",
+    "strMeal": "Vegetarian Chili",
+    "strCategory": "Vegetarian",
+    "strArea": "American",
+    "strInstructions": "Cook beans, tomatoes, and vegetables in chili seasoning for a comforting stew.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xwwxyq1487349062.jpg",
+    "strTags": "Vegan,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=j3tVhYxy6Yw",
+    "ingredients": [
+      "1 can kidney beans",
+      "1 can black beans",
+      "1 can diced tomatoes",
+      "1 onion",
+      "1 bell pepper",
+      "2 tbsp chili powder",
+      "1 tbsp cumin",
+      "1 cup vegetable broth"
+    ]
+  },
+  {
+    "idMeal": "10064",
+    "strMeal": "Chicken Caesar Salad",
+    "strCategory": "Chicken",
+    "strArea": "American",
+    "strInstructions": "Grill chicken and serve over romaine lettuce with Caesar dressing and croutons.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wvpsxp1487347417.jpg",
+    "strTags": "Salad,Light",
+    "strYoutube": "https://www.youtube.com/watch?v=G0hSuyLbmLg",
+    "ingredients": [
+      "2 chicken breasts",
+      "2 cups romaine lettuce",
+      "1/2 cup Caesar dressing",
+      "1/4 cup parmesan cheese",
+      "Croutons"
+    ]
+  },
+  {
+    "idMeal": "10065",
+    "strMeal": "Pork Schnitzel",
+    "strCategory": "Pork",
+    "strArea": "German",
+    "strInstructions": "Bread and fry pork cutlets, then serve with lemon wedges and potatoes.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ktx1d91585120943.jpg",
+    "strTags": "Fried,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=fyA8dpQCV0I",
+    "ingredients": [
+      "4 pork cutlets",
+      "1 cup breadcrumbs",
+      "1 egg",
+      "1 tbsp flour",
+      "1 tbsp lemon juice",
+      "1/4 cup butter"
+    ]
+  },
+  {
+    "idMeal": "10066",
+    "strMeal": "Fish and Chips",
+    "strCategory": "Seafood",
+    "strArea": "British",
+    "strInstructions": "Batter fish fillets and fry until golden, serve with chips and tartar sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/5l2g3k1487349878.jpg",
+    "strTags": "Fried,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=Ah9gMsy37Jo",
+    "ingredients": [
+      "4 white fish fillets",
+      "1 cup flour",
+      "1/2 cup beer",
+      "1 tbsp baking powder",
+      "4 large potatoes",
+      "Tartar sauce"
+    ]
+  },
+  {
+    "idMeal": "10067",
+    "strMeal": "Chicken Fried Rice",
+    "strCategory": "Chicken",
+    "strArea": "Chinese",
+    "strInstructions": "Stir fry rice with chicken, vegetables, soy sauce, and sesame oil.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xtsqv21130150756.jpg",
+    "strTags": "Quick,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=rkp9prv09iI",
+    "ingredients": [
+      "2 chicken breasts",
+      "2 cups cooked rice",
+      "1/2 cup peas",
+      "1/2 cup carrots",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil",
+      "2 eggs"
+    ]
+  },
+  {
+    "idMeal": "10068",
+    "strMeal": "Falafel",
+    "strCategory": "Vegetarian",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Blend chickpeas, herbs, and spices into a dough, then fry into crispy patties.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/sytqpt1511190432.jpg",
+    "strTags": "Vegan,Snack",
+    "strYoutube": "https://www.youtube.com/watch?v=kzR0gmaTbzQ",
+    "ingredients": [
+      "1 can chickpeas",
+      "1/4 cup parsley",
+      "1 onion",
+      "2 cloves garlic",
+      "1 tsp cumin",
+      "1 tsp coriander",
+      "1/2 cup flour",
+      "Olive oil"
+    ]
+  },
+  {
+    "idMeal": "10069",
+    "strMeal": "Moussaka",
+    "strCategory": "Beef",
+    "strArea": "Greek",
+    "strInstructions": "Layer eggplant, ground beef, and béchamel sauce, then bake.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/7k1t9p1511191073.jpg",
+    "strTags": "Baked,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=EmwVhFP3v4E",
+    "ingredients": [
+      "1 eggplant",
+      "300g ground beef",
+      "1 onion",
+      "2 tomatoes",
+      "1 cup béchamel sauce",
+      "1 tsp cinnamon",
+      "1/4 cup parmesan cheese"
+    ]
+  },
+  {
+    "idMeal": "10070",
+    "strMeal": "Shrimp Scampi",
+    "strCategory": "Seafood",
+    "strArea": "Italian",
+    "strInstructions": "Cook shrimp in garlic butter, then toss with pasta and lemon juice.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxwvqs1511797106.jpg",
+    "strTags": "Pasta,Seafood",
+    "strYoutube": "https://www.youtube.com/watch?v=DF8n3JXaCpI",
+    "ingredients": [
+      "300g shrimp",
+      "200g spaghetti",
+      "2 cloves garlic",
+      "1/2 cup butter",
+      "1 tbsp lemon juice",
+      "1/4 cup parsley"
+    ]
+  },
+  {
+    "idMeal": "10071",
+    "strMeal": "Beef Wellington",
+    "strCategory": "Beef",
+    "strArea": "British",
+    "strInstructions": "Wrap beef tenderloin in puff pastry with mushrooms and pâté, then bake.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/mvwvut1511190721.jpg",
+    "strTags": "Baked,Special",
+    "strYoutube": "https://www.youtube.com/watch?v=b7iwRz11Eyk",
+    "ingredients": [
+      "1 beef tenderloin",
+      "1/2 cup mushrooms",
+      "1/4 cup pâté",
+      "1 sheet puff pastry",
+      "1 egg",
+      "1 tbsp mustard"
+    ]
+  },
+  {
+    "idMeal": "10072",
+    "strMeal": "Lamb Shawarma",
+    "strCategory": "Lamb",
+    "strArea": "Middle Eastern",
+    "strInstructions": "Marinate lamb in spices, then grill and serve with pita and salad.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/nuusql1511191039.jpg",
+    "strTags": "Grilled,Spicy",
+    "strYoutube": "https://www.youtube.com/watch?v=E1hgJ61lcSY",
+    "ingredients": [
+      "500g lamb",
+      "1 tbsp cumin",
+      "1 tbsp paprika",
+      "1 onion",
+      "1/4 cup yogurt",
+      "1 pita bread",
+      "Tomatoes, lettuce"
+    ]
+  },
+  {
+    "idMeal": "10073",
+    "strMeal": "Peking Duck",
+    "strCategory": "Duck",
+    "strArea": "Chinese",
+    "strInstructions": "Roast duck until crispy, then serve with pancakes and hoisin sauce.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxvvzt1511190846.jpg",
+    "strTags": "Roast,Special",
+    "strYoutube": "https://www.youtube.com/watch?v=0xfJ06wmtgE",
+    "ingredients": [
+      "1 whole duck",
+      "2 tbsp hoisin sauce",
+      "1 cucumber",
+      "2 spring onions",
+      "Pancakes"
+    ]
+  },
+  {
+    "idMeal": "10074",
+    "strMeal": "Pasta Bolognese",
+    "strCategory": "Pasta",
+    "strArea": "Italian",
+    "strInstructions": "Cook ground beef with tomatoes and herbs, then serve over pasta.",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/xxwvqs1511797106.jpg",
+    "strTags": "Pasta,Comfort",
+    "strYoutube": "https://www.youtube.com/watch?v=DF8n3JXaCpI",
+    "ingredients": [
+      "300g ground beef",
+      "200g spaghetti",
+      "1 can diced tomatoes",
+      "1 onion",
+      "2 cloves garlic",
+      "1 tbsp Italian seasoning"
+    ]
+  }
+]
