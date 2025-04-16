@@ -37,19 +37,23 @@ router.get("/:id", requireAuth, async (req, res) => {
 
 
 router.post("/", requireAuth, async (req, res) => {
-  const favoriteData = req.body;
+  const { mealId, name, imageUrl, strArea, strCategory } = req.body;
 
-  console.log("Received favorite data:", favoriteData);
+  console.log("Received favorite data:", req.body);
 
-  if (!favoriteData.idMeal || !favoriteData.strMeal) {
+  if (!mealId || !name || !imageUrl) {
     return res
       .status(400)
-      .json({ error: "Missing required fields: idMeal, strMeal" });
+      .json({ error: "Missing required fields: mealId, name, imageUrl" });
   }
 
   try {
     const newFavorite = await Favorite.create({
-      ...favoriteData,
+      idMeal: mealId,
+      strMeal: name,
+      strMealThumb: imageUrl,
+      strArea,
+      strCategory,
       userId: req.user.id,
     });
 
