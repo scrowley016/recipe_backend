@@ -105,7 +105,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-router.post("/", requireAuth, (req, res) => {
+router.post("/user-recipes", requireAuth, (req, res) => {
   fs.readFile(dataPath, "utf8", (err, data) => {
     if (err) return res.status(500).json({ error: "Error reading data" });
 
@@ -125,7 +125,7 @@ router.post("/", requireAuth, (req, res) => {
   });
 });
 
-router.put("/:id", requireAuth, (req, res) => {
+router.put("/user-recipes/:id", requireAuth, (req, res) => {
   fs.readFile(dataPath, "utf8", (err, data) => {
     if (err) return res.status(500).json({ error: "Error reading data" });
 
@@ -154,7 +154,7 @@ router.put("/:id", requireAuth, (req, res) => {
   });
 });
 
-router.delete("/:id", requireAuth, (req, res) => {
+router.delete("/user-recipe/:id", requireAuth, (req, res) => {
   fs.readFile(dataPath, "utf8", (err, data) => {
     if (err) return res.status(500).json({ error: "Error reading data" });
 

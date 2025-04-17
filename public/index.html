@@ -210,6 +210,93 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
         </pre>
     </div>
 
+        <div class="endpoint">
+          <p><span class="method">POST</span> <code>/api/user-recipes</code></p>
+          <p>Create a new custom recipe. Requires authentication.</p>
+          <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+          <pre>
+            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer your_token_here"
+              },
+              body: JSON.stringify({
+                strMeal: "Grandma's Apple Pie",
+                strCategory: "Dessert",
+                strArea: "American",
+                strInstructions: "1. Peel apples... 2. Make crust...",
+                strMealThumb: "https://example.com/images/applepie.jpg",
+                strTags: "Pie,Dessert,Fruit",
+                strYoutube: "https://youtube.com/applepie",
+                ingredients: [
+                  "2 apples",
+                  "1 cup flour",
+                  "1/2 cup sugar"
+                ]
+              })
+            });
+                    </pre>
+          <p><strong>Returns:</strong></p>
+          <pre>
+            {
+              "message": "Recipe created successfully!",
+              "data": {
+                "id": 1,
+                "userId": 1,
+                "strMeal": "Grandma's Apple Pie",
+                ...
+              }
+            }
+                    </pre>
+        </div>
+        
+        <div class="endpoint">
+          <p><span class="method">GET</span> <code>/api/user-recipes</code></p>
+          <p>Get all recipes created by the logged-in user.</p>
+          <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+          <pre>
+            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes", {
+              headers: {
+                Authorization: "Bearer your_token_here"
+              }
+            });
+                    </pre>
+          <p><strong>Returns:</strong></p>
+          <pre>
+            {
+              "data": [
+                {
+                  "id": 1,
+                  "strMeal": "Grandma's Apple Pie",
+                  "strCategory": "Dessert",
+                  "strArea": "American",
+                  ...
+                },
+                ...
+              ]
+            }
+                    </pre>
+        </div>
+        
+        <div class="endpoint">
+          <p><span class="method">DELETE</span> <code>/api/user-recipes/:id</code></p>
+          <p>Delete a custom recipe by its ID. Only the user who created the recipe can delete it.</p>
+          <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+          <pre>
+            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes/1", {
+              method: "DELETE",
+              headers: {
+                Authorization: "Bearer your_token_here"
+              }
+            });
+                    </pre>
+          <p><strong>Returns:</strong></p>
+          <pre>
+            { "message": "Recipe deleted.", "id": 1 }
+                    </pre>
+        </div>
+
     <h2>🍴 Favorites Routes</h2>
 
     <div class="endpoint">
@@ -316,92 +403,7 @@ fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
 { "message": "Favorite removed.", id: deleted_id }
     </pre>
     </div>
-    <div class="endpoint">
-      <p><span class="method">POST</span> <code>/api/user-recipes</code></p>
-      <p>Create a new custom recipe. Requires authentication.</p>
-      <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
-      <pre>
-    fetch("https://fsa-recipe.up.railway.app/api/user-recipes", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer your_token_here"
-      },
-      body: JSON.stringify({
-        strMeal: "Grandma's Apple Pie",
-        strCategory: "Dessert",
-        strArea: "American",
-        strInstructions: "1. Peel apples... 2. Make crust...",
-        strMealThumb: "https://example.com/images/applepie.jpg",
-        strTags: "Pie,Dessert,Fruit",
-        strYoutube: "https://youtube.com/applepie",
-        ingredients: [
-          "2 apples",
-          "1 cup flour",
-          "1/2 cup sugar"
-        ]
-      })
-    });
-            </pre>
-      <p><strong>Returns:</strong></p>
-      <pre>
-    {
-      "message": "Recipe created successfully!",
-      "data": {
-        "id": 1,
-        "userId": 1,
-        "strMeal": "Grandma's Apple Pie",
-        ...
-      }
-    }
-            </pre>
-    </div>
-    
-    <div class="endpoint">
-      <p><span class="method">GET</span> <code>/api/user-recipes</code></p>
-      <p>Get all recipes created by the logged-in user.</p>
-      <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
-      <pre>
-    fetch("https://fsa-recipe.up.railway.app/api/user-recipes", {
-      headers: {
-        Authorization: "Bearer your_token_here"
-      }
-    });
-            </pre>
-      <p><strong>Returns:</strong></p>
-      <pre>
-    {
-      "data": [
-        {
-          "id": 1,
-          "strMeal": "Grandma's Apple Pie",
-          "strCategory": "Dessert",
-          "strArea": "American",
-          ...
-        },
-        ...
-      ]
-    }
-            </pre>
-    </div>
-    
-    <div class="endpoint">
-      <p><span class="method">DELETE</span> <code>/api/user-recipes/:id</code></p>
-      <p>Delete a custom recipe by its ID. Only the user who created the recipe can delete it.</p>
-      <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
-      <pre>
-    fetch("https://fsa-recipe.up.railway.app/api/user-recipes/1", {
-      method: "DELETE",
-      headers: {
-        Authorization: "Bearer your_token_here"
-      }
-    });
-            </pre>
-      <p><strong>Returns:</strong></p>
-      <pre>
-    { "message": "Recipe deleted.", "id": 1 }
-            </pre>
-    </div>
+
 
 </body>
 
