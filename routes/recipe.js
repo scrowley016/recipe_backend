@@ -55,10 +55,11 @@ router.delete("/user-recipes/:id", requireAuth, async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
-    const dbRecipes = await Recipe.findAll();
-    const merged = [...jsonData, ...dbRecipes.map((recipe) => recipe.toJSON())];
-    // res.json(jsonData);
-    res.json(merged);
+    // const dbRecipes = await Recipe.findAll();
+    // const merged = [...jsonData, ...dbRecipes.map((recipe) => recipe.toJSON())];
+    // console.log("Merged Recipes:", merged);
+    res.json(jsonData);
+    // res.json(merged);
   } catch (err) {
     console.error("Error fetching recipes:", err);
     res.status(500).json({ error: "Failed to load recipes" });
