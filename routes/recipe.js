@@ -85,7 +85,6 @@ router.get("/random", (req, res) => {
       console.error("Error reading data file:", err);
       return res.status(500).json({ error: "Internal Server Error" });
     }
-
     const recipes = JSON.parse(data);
     const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
     res.json(randomRecipe);
@@ -100,7 +99,7 @@ router.get("/:id", async (req, res) => {
     const jsonRecipe = jsonData.find((r) => r.idMeal === recipeId);
 
     if (jsonRecipe) return res.json(jsonRecipe);
-
+    
     const dbRecipe = await Recipe.findOne({ where: { idMeal: recipeId } });
     if (dbRecipe) return res.json(dbRecipe);
 
