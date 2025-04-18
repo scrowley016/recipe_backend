@@ -22,11 +22,8 @@ const Recipe = RecipeModel(sequelize);
 User.hasMany(Favorite, { foreignKey: "userId" });
 Favorite.belongsTo(User, { foreignKey: "userId" });
 
-// Recipe.hasMany(Favorite, { foreignKey: "recipeId" });
-// Favorite.belongsTo(Recipe, { foreignKey: "recipeId" });
-
-// User.hasMany(Recipe, { foreignKey: "userId" });
-// Recipe.belongsTo(User, { foreignKey: "userId" });
+User.hasMany(Recipe, { foreignKey: "userId" });
+Recipe.belongsTo(User, { foreignKey: "userId" });
 
 
 module.exports = {
