@@ -73,7 +73,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/register", {
         <p><strong>Returns:</strong></p>
         <pre>
 {
-  "token": "jwt_token_here"
+  "token": "jwt_token_here",
   "username" : "username here"
 }
     </pre>
@@ -95,7 +95,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/login", {
         <p><strong>Returns:</strong></p>
         <pre>
 {
-  "token": "jwt_token_here"
+  "token": "jwt_token_here",
   "username" : "username here"
 }
     </pre>
@@ -211,11 +211,11 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
     </div>
 
         <div class="endpoint">
-          <p><span class="method">POST</span> <code>/api/recipe/user-recipes</code></p>
+          <p><span class="method">POST</span> <code>/api/recipes/user-recipes</code></p>
           <p>Create a new custom recipe. Requires authentication.</p>
           <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
           <pre>
-            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes", {
+            fetch("https://fsa-recipe.up.railway.app/api/recipes/user-recipes", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -252,11 +252,11 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
         </div>
         
         <div class="endpoint">
-          <p><span class="method">GET</span> <code>/api/recipe/user-recipes</code></p>
+          <p><span class="method">GET</span> <code>/api/recipes/user-recipes</code></p>
           <p>Get all recipes created by the logged-in user.</p>
           <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
           <pre>
-            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes", {
+            fetch("https://fsa-recipe.up.railway.app/api/recipes/user-recipes", {
               headers: {
                 Authorization: "Bearer your_token_here"
               }
@@ -279,23 +279,25 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
                     </pre>
         </div>
         
-        <div class="endpoint">
-          <p><span class="method">DELETE</span> <code>/api/recipe/user-recipes/:id</code></p>
-          <p>Delete a custom recipe by its ID. Only the user who created the recipe can delete it.</p>
-          <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
-          <pre>
-            fetch("https://fsa-recipe.up.railway.app/api/recipe/user-recipes/1", {
-              method: "DELETE",
-              headers: {
-                Authorization: "Bearer your_token_here"
-              }
-            });
-                    </pre>
-          <p><strong>Returns:</strong></p>
-          <pre>
-            { "message": "Recipe deleted.", "id": 1 }
-                    </pre>
-        </div>
+      <div class="endpoint">
+        <p><span class="method">DELETE</span> <code>/api/recipes/user-recipes/:id</code></p>
+        <p>Deletes a user-created recipe by ID. Requires authentication. Only the owner of the recipe can delete it.</p>
+        <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
+        <pre>
+          fetch("https://fsa-recipe.up.railway.app/api/recipes/user-recipes/1", {
+            method: "DELETE",
+            headers: {
+              Authorization: "Bearer your_token_here"
+            }
+          });
+        </pre>
+        <p><strong>Returns:</strong></p>
+        <pre>
+      {
+        "message": "Recipe deleted successfully."
+      }
+        </pre>
+      </div>
 
     <h2>🍴 Favorites Routes</h2>
 
