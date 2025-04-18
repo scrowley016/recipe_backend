@@ -201,11 +201,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
       "strMealThumb": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
       "strTags": "Unhealthy,Junk,Filling",
       "strYoutube": "https://www.youtube.com/watch?v=UVAMAoA2_WU",
-      "ingredients": [
-        "5 potatoes",
-        "Gravy",
-        "Cheese Curds"
-      ]
+      "ingredients": 5 potatoes,Gravy,Cheese Curds (**note - this is a comma separated string, not an array, but will be converted to an array when saved. FORMAT MATTERS! **)
     }
         </pre>
     </div>
@@ -229,10 +225,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
                 strMealThumb: "https://example.com/images/applepie.jpg",
                 strTags: "Pie,Dessert,Fruit",
                 strYoutube: "https://youtube.com/applepie",
-                ingredients: [
-                  "2 apples",
-                  "1 cup flour",
-                  "1/2 cup sugar"
+                ingredients: "2 apples,1 cup flour,1/2 cup sugar"  (**note - this is a comma separated string, not an array, but will be converted to an array when saved FORMAT MATTERS!**),
                 ]
               })
             });
@@ -271,6 +264,13 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
                   "strMeal": "Grandma's Apple Pie",
                   "strCategory": "Dessert",
                   "strArea": "American",
+                  "ingredients": [
+                  "2 apples",
+                  "1 cup flour",
+                  "1/2 cup sugar",
+                  ...
+                  ],
+                  ingredientsString: "2 apples,1 cup flour,1/2 cup sugar"
                   ...
                 },
                 ...

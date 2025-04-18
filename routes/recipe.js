@@ -10,12 +10,21 @@ const { Recipe } = require("../config/database");
 
 router.post("/user-recipes", requireAuth, async (req, res) => {
   try {
+    const { ingredients, ...rest } = req.body;
+
+    const ingredientsArray =
+      typeof ingredients === "string"
+        ? ingredients.split(",").map((str) => str.trim())
+        : [];
+
     const newRecipe = await Recipe.create({
-      ...req.body,
+      ...rest,
+      ingredients: ingredientsArray,
       idMeal: Date.now().toString(),
       userId: req.user.id,
       isUserRecipe: true,
     });
+
     res.status(201).json(newRecipe);
   } catch (err) {
     res.status(500).json({ error: "Error creating recipe" });
@@ -30,7 +39,16 @@ router.put("/user-recipes/:id", requireAuth, async (req, res) => {
     if (recipe.userId !== req.user.id)
       return res.status(403).json({ error: "Not authorized" });
 
-    await recipe.update(req.body);
+    const { ingredients, ...rest } = req.body;
+
+    const updatedData = {
+      ...rest,
+      ...(ingredients && {
+        ingredients: ingredients.split(",").map((str) => str.trim()),
+      }),
+    };
+
+    await recipe.update(updatedData);
     res.json(recipe);
   } catch (err) {
     res.status(500).json({ error: "Error updating recipe" });
@@ -51,6 +69,29 @@ router.delete("/user-recipes/:id", requireAuth, async (req, res) => {
   }
 });
 
+router.get("/user-recipes", requireAuth, async (req, res) => {
+  try {
+    const recipes = await Recipe.findAll({
+      where: {
+        userId: req.user.id,
+        isUserRecipe: true,
+      },
+    });
+
+    const withIngredientString = recipes.map((recipe) => {
+      const ingredientsArray = recipe.ingredients || [];
+      const ingredientsString = ingredientsArray.join(", ");
+      return {
+        ...recipe.toJSON(),
+        ingredientsString,
+      };
+    });
+
+    res.json(withIngredientString);
+  } catch (err) {
+    res.status(500).json({ error: "Error fetching user recipes" });
+  }
+});
 
 router.get("/", async (req, res) => {
   try {
