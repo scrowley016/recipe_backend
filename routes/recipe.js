@@ -3,70 +3,80 @@ const fs = require("fs");
 const path = require("path");
 
 const router = express.Router();
-
 const dataPath = path.join(__dirname, "..", "data", "mock_meals.json");
 const requireAuth = require("../utils");
+const { Recipe } = require("../config/database");
 
-router.post("/", requireAuth, (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) return res.status(500).json({ error: "Error reading data" });
 
-    const recipes = JSON.parse(data);
-    const newRecipe = {
+router.post("/user-recipes", requireAuth, async (req, res) => {
+  try {
+    const newRecipe = await Recipe.create({
       ...req.body,
       idMeal: Date.now().toString(),
-      userId: req.user.id, 
-    };
-
-    recipes.push(newRecipe);
-
-    fs.writeFile(dataPath, JSON.stringify(recipes, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: "Error saving recipe" });
-      res.status(201).json(newRecipe);
+      userId: req.user.id,
+      isUserRecipe: true,
     });
-  });
+    res.status(201).json(newRecipe);
+  } catch (err) {
+    res.status(500).json({ error: "Error creating recipe" });
+  }
 });
 
-router.put("/:id", requireAuth, (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) return res.status(500).json({ error: "Error reading data" });
 
-    const recipes = JSON.parse(data);
-    const recipeIndex = recipes.findIndex((r) => r.idMeal === req.params.id);
+router.put("/user-recipes/:id", requireAuth, async (req, res) => {
+  try {
+    const recipe = await Recipe.findOne({ where: { idMeal: req.params.id } });
+    if (!recipe) return res.status(404).json({ error: "Recipe not found" });
+    if (recipe.userId !== req.user.id)
+      return res.status(403).json({ error: "Not authorized" });
 
-    if (recipeIndex === -1) {
-      return res.status(404).json({ error: "Recipe not found" });
-    }
-
-    const recipe = recipes[recipeIndex];
-
-    if (recipe.userId !== req.user.id) {
-      return res
-        .status(403)
-        .json({ error: "Not authorized to update this recipe" });
-    }
-
-    const updatedRecipe = { ...recipe, ...req.body };
-    recipes[recipeIndex] = updatedRecipe;
-
-    fs.writeFile(dataPath, JSON.stringify(recipes, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: "Error saving recipe" });
-      res.json(updatedRecipe);
-    });
-  });
+    await recipe.update(req.body);
+    res.json(recipe);
+  } catch (err) {
+    res.status(500).json({ error: "Error updating recipe" });
+  }
 });
 
-router.get("/", (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) {
-      console.error("Error reading data file:", err);
-      return res.status(500).json({ error: "Internal Server Error" });
-    }
+router.delete("/user-recipes/:id", requireAuth, async (req, res) => {
+  try {
+    const recipe = await Recipe.findOne({ where: { idMeal: req.params.id } });
+    if (!recipe) return res.status(404).json({ error: "Recipe not found" });
+    if (recipe.userId !== req.user.id)
+      return res.status(403).json({ error: "Not authorized" });
 
-    const recipes = JSON.parse(data);
-    res.json(recipes);
-  });
+    await recipe.destroy();
+    res.json({ message: "Recipe deleted successfully" });
+  } catch (err) {
+    res.status(500).json({ error: "Error deleting recipe" });
+  }
 });
+
+
+router.get("/", async (req, res) => {
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    const dbRecipes = await Recipe.findAll();
+    const merged = [...jsonData, ...dbRecipes.map((recipe) => recipe.toJSON())];
+    // res.json(jsonData);
+    res.json(merged);
+  } catch (err) {
+    console.error("Error fetching recipes:", err);
+    res.status(500).json({ error: "Failed to load recipes" });
+  }
+});
+
+// router.get("/random", async (req, res) => {
+//   try {
+//     const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+//     const dbRecipes = await Recipe.findAll();
+//     const allRecipes = [...jsonData, ...dbRecipes.map((r) => r.toJSON())];
+//     const randomRecipe =
+//       allRecipes[Math.floor(Math.random() * allRecipes.length)];
+//     res.json(randomRecipe);
+//   } catch (err) {
+//     res.status(500).json({ error: "Error loading random recipe" });
+//   }
+// });
 
 router.get("/random", (req, res) => {
   fs.readFile(dataPath, "utf8", (err, data) => {
@@ -81,105 +91,22 @@ router.get("/random", (req, res) => {
   });
 });
 
-router.get("/:id", (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) {
-      console.error("Error reading data file:", err);
-      return res.status(500).json({ error: "Internal Server Error" });
-    }
 
-    const recipes = JSON.parse(data);
-    const recipeId = req.params.id;
+router.get("/:id", async (req, res) => {
+  const recipeId = req.params.id;
+  try {
+    const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
+    const jsonRecipe = jsonData.find((r) => r.idMeal === recipeId);
 
-    console.log(`Recipe ID requested: ${recipeId}`);
+    if (jsonRecipe) return res.json(jsonRecipe);
 
-    if (recipeId) {
-      const recipe = recipes.find((r) => r.idMeal == recipeId);
-      if (!recipe) {
-        return res.status(404).json({ error: "Recipe not found" });
-      }
-      return res.json(recipe);
-    }
+    const dbRecipe = await Recipe.findOne({ where: { idMeal: recipeId } });
+    if (dbRecipe) return res.json(dbRecipe);
 
-    res.json(recipes);
-  });
-});
-
-router.post("/user-recipes", requireAuth, (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) return res.status(500).json({ error: "Error reading data" });
-
-    const recipes = JSON.parse(data);
-    const newRecipe = {
-      ...req.body,
-      idMeal: Date.now().toString(),
-      userId: req.user.id,
-    };
-
-    recipes.push(newRecipe);
-
-    fs.writeFile(dataPath, JSON.stringify(recipes, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: "Error saving recipe" });
-      res.status(201).json(newRecipe);
-    });
-  });
-});
-
-router.put("/user-recipes/:id", requireAuth, (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) return res.status(500).json({ error: "Error reading data" });
-
-    const recipes = JSON.parse(data);
-    const recipeIndex = recipes.findIndex((r) => r.idMeal === req.params.id);
-
-    if (recipeIndex === -1) {
-      return res.status(404).json({ error: "Recipe not found" });
-    }
-
-    const recipe = recipes[recipeIndex];
-
-    if (recipe.userId !== req.user.id) {
-      return res
-        .status(403)
-        .json({ error: "Not authorized to update this recipe" });
-    }
-
-    const updatedRecipe = { ...recipe, ...req.body };
-    recipes[recipeIndex] = updatedRecipe;
-
-    fs.writeFile(dataPath, JSON.stringify(recipes, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: "Error saving recipe" });
-      res.json(updatedRecipe);
-    });
-  });
-});
-
-router.delete("/user-recipe/:id", requireAuth, (req, res) => {
-  fs.readFile(dataPath, "utf8", (err, data) => {
-    if (err) return res.status(500).json({ error: "Error reading data" });
-
-    let recipes = JSON.parse(data);
-    const recipeIndex = recipes.findIndex((r) => r.idMeal === req.params.id);
-
-    if (recipeIndex === -1) {
-      return res.status(404).json({ error: "Recipe not found" });
-    }
-
-    const recipe = recipes[recipeIndex];
-
-    if (recipe.userId !== req.user.id) {
-      return res
-        .status(403)
-        .json({ error: "Not authorized to delete this recipe" });
-    }
-
-    recipes.splice(recipeIndex, 1);
-
-    fs.writeFile(dataPath, JSON.stringify(recipes, null, 2), (err) => {
-      if (err) return res.status(500).json({ error: "Error saving data" });
-      res.json({ message: "Recipe deleted successfully" });
-    });
-  });
+    res.status(404).json({ error: "Recipe not found" });
+  } catch (err) {
+    res.status(500).json({ error: "Error fetching recipe" });
+  }
 });
 
 module.exports = router;
