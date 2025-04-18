@@ -211,7 +211,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
     </div>
 
         <div class="endpoint">
-          <p><span class="method">POST</span> <code>/api/user-recipes</code></p>
+          <p><span class="method">POST</span> <code>/api/recipe/user-recipes</code></p>
           <p>Create a new custom recipe. Requires authentication.</p>
           <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
           <pre>
@@ -252,7 +252,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
         </div>
         
         <div class="endpoint">
-          <p><span class="method">GET</span> <code>/api/user-recipes</code></p>
+          <p><span class="method">GET</span> <code>/api/recipe/user-recipes</code></p>
           <p>Get all recipes created by the logged-in user.</p>
           <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
           <pre>
@@ -280,7 +280,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
         </div>
         
         <div class="endpoint">
-          <p><span class="method">DELETE</span> <code>/api/user-recipes/:id</code></p>
+          <p><span class="method">DELETE</span> <code>/api/recipe/user-recipes/:id</code></p>
           <p>Delete a custom recipe by its ID. Only the user who created the recipe can delete it.</p>
           <p><strong>Header:</strong> <code>Authorization: Bearer your_token_here</code></p>
           <pre>
