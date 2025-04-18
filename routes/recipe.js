@@ -57,8 +57,6 @@ router.get("/", async (req, res) => {
     const jsonData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
     const dbRecipes = await Recipe.findAll();
     const merged = [...jsonData, ...dbRecipes.map((recipe) => recipe.toJSON())];
-    console.log("Merged Recipes:", merged);
-    // res.json(jsonData);
     res.json(merged);
   } catch (err) {
     console.error("Error fetching recipes:", err);
