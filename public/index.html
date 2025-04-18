@@ -108,7 +108,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/login", {
         <pre>
 fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
   headers: {
-    Authorization: "Bearer your_token_here"
+      Authorization: `Bearer ${your_token_here}`
   }
 });
     </pre>
@@ -219,7 +219,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer your_token_here"
+                Authorization: `Bearer ${your_token_here}`
               },
               body: JSON.stringify({
                 strMeal: "Grandma's Apple Pie",
@@ -258,7 +258,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
           <pre>
             fetch("https://fsa-recipe.up.railway.app/api/recipes/user-recipes", {
               headers: {
-                Authorization: "Bearer your_token_here"
+                  Authorization: `Bearer ${your_token_here}`
               }
             });
                     </pre>
@@ -287,7 +287,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
           fetch("https://fsa-recipe.up.railway.app/api/recipes/user-recipes/1", {
             method: "DELETE",
             headers: {
-              Authorization: "Bearer your_token_here"
+                Authorization: `Bearer ${your_token_here}`
             }
           });
         </pre>
@@ -308,7 +308,7 @@ fetch("https://fsa-recipe.up.railway.app/api/auth/me", {
         <pre>
 fetch("https://fsa-recipe.up.railway.app/api/favorites", {
   headers: {
-    Authorization: "Bearer your_token_here"
+    Authorization: `Bearer ${your_token_here}`
   }
 });
     </pre>
@@ -337,7 +337,7 @@ fetch("https://fsa-recipe.up.railway.app/api/favorites", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    Authorization: "Bearer your_token_here"
+    Authorization: `Bearer ${your_token_here}`
   },
   body: JSON.stringify({
     mealId: "53060",
@@ -371,7 +371,7 @@ fetch("https://fsa-recipe.up.railway.app/api/favorites", {
         <pre>
 fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
   headers: {
-    Authorization: "Bearer your_token_here"
+    Authorization: `Bearer ${your_token_here}`
   }
 });
     </pre>
@@ -396,7 +396,7 @@ fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
 fetch("https://fsa-recipe.up.railway.app/api/favorites/1", {
   method: "DELETE",
   headers: {
-    Authorization: "Bearer your_token_here"
+      Authorization: `Bearer ${your_token_here}`
   }
 });
     </pre>
